@@ -7,10 +7,10 @@
  const App = () => {
   return (
        <div>
-            <Hello/>
-            <Hello/>
-            <Hello/>
-            <Hello/>
+            <Hello name="React"/>
+            <Hello name="CSS"/>
+            <Hello name="HTML"/>
+            <Hello name="JS"/>
        </div>
   )
 }
