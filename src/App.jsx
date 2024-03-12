@@ -1,20 +1,14 @@
-//  creating a second component : Hello
-const Hello =()=>{
-      return (
-        <h1>Hello World !</h1>
-      )
-}
+ import Hello from "./components/Hello"; //import the Hello component
 
 
 
+ // creating our first component 
 
-
-
-// creating our first component 
-
-const App = () => {
-  return(
+ const App = () => {
+  return (
        <div>
+            <Hello/>
+            <Hello/>
             <Hello/>
             <Hello/>
        </div>
