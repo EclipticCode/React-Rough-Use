@@ -1,12 +1,11 @@
-//  creating a second component : Hello
-const Hello =(props)=>{
+import "./Hello.css"
 
-    // console.log(props)
-    const headerStyle = {
-        color:'green'
-    }
+
+//  creating a second component : Hello
+
+const Hello =(props)=>{
     return (
-      <h1 style={headerStyle}>Hello {props.name} !</h1>
+      <h1 className="header">Hello {props.name} !</h1>
     )
 }
 
