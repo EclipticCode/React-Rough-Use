@@ -6,6 +6,7 @@ import "./Hello.css"
 const Hello =(props)=>{
     return (
       <h1 className="header">Hello {props.name} !</h1>
+      
     )
 }
 
