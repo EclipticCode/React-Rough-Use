@@ -1,18 +1,23 @@
-import User from "./components/User"
+import { Component } from "react"
 
-const App = () => {
+
+
+class Hello extends Component{
+  render(){
+    return(
+      <p>Hello world</p>
+    )
+  }
   
-  const isLoggedIn = false 
-  return (
+}
+class App extends Component{
+  render(){
+  return(
     <div>
-       {
-        isLoggedIn ?    
-        ( <User message="Welcome,User !" buttonlabel="Logout"/> ) :
-        ( <User message="Please Login" buttonlabel="Login"/> )
-       }
-
+      <Hello/>
     </div>
   )
+  }
 }
 
 export default App
