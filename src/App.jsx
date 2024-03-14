@@ -1,19 +1,11 @@
 import { Component } from "react"
+import Hello from "./components/Hello"
 
-
-
-class Hello extends Component{
-  render(){
-    return(
-      <p>Hello world</p>
-    )
-  }
-  
-}
 class App extends Component{
   render(){
   return(
     <div>
+      <Hello/>
       <Hello/>
     </div>
   )
