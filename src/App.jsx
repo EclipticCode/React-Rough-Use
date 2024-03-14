@@ -1,6 +1,11 @@
 import Note from "./components/Note"
 
 const App = (props) => {
+
+  const addNote= (e)=>{
+    e.preventDefault()
+   console.log('clicked')
+  }
   return (
     <div>
      <h1>Notes</h1>
@@ -11,6 +16,11 @@ const App = (props) => {
           })
            }
      </ul>
+
+     <form onSubmit={addNote}>
+      <input />
+      <button type="submit">Save</button>
+     </form>
     </div>
   )
 }
