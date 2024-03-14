@@ -1,12 +1,18 @@
 import { Component } from "react";
 
 
-class Hello extends Component{
-    render(){
-      return(
-        <p>Hello world !</p>
-      )
+class Hello extends Component {
+    render() {
+        
+            // console.log(this.props)
+            // const name = this.props.name ? this.props.name :"Guest"
+            return (
+            <p>Hello {this.props.name}!</p>
+        )
     }
-    
-  }
-  export default Hello
+}
+Hello.defaultProps = {
+    name:"Guest"
+}
+
+export default Hello
